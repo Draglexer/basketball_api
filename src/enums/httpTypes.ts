@@ -1,3 +1,4 @@
+// enum для
 export enum HttpTypes {
     get,
     post,

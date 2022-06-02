@@ -1,3 +1,4 @@
+// Модель user
 import { DataTypes, Model, Sequelize } from "sequelize";
 
 export class User extends Model {

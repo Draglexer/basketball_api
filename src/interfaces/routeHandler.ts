@@ -1,3 +1,4 @@
+// интерфейс хендлер для роутов
 import { RequestHandler } from "express";
 import { HttpTypes } from "../enums/httpTypes";
 
