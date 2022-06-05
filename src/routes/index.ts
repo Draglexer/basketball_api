@@ -1,8 +1,11 @@
 // тут в массив складываются все хендлеры
 import { userByIdGet } from "./user/getById";
-import { userGet } from "./user/get";
+import { userGetAll } from "./user/getAll";
+import { userSignup } from "./user/signup";
+import { userLogin } from "./user/login"
 
 export const routeHandlers = [
     userByIdGet,
-    userGet
-]
+    userGetAll,
+    userSignup
+];

@@ -5,7 +5,7 @@ import { HttpTypes } from "../../enums/httpTypes";
 import {userService} from "../../services/user/userService";
 
 export const userByIdGet: RouteHandler = {
-    url: "/user/:id",
+    url: "/team/:id",
     requestType: HttpTypes.get,
     handler: async (req, res) => {
         try {

@@ -1,6 +1,6 @@
-// интерфейс хендлер для роутов
+// интерфейс хендлер для сервисов
 import { RequestHandler } from "express";
-import { HttpTypes } from "../enums/httpTypes";
+import { HttpTypes } from "../../enums/httpTypes";
 
 export interface RouteHandler {
     url: string
