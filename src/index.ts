@@ -1,5 +1,5 @@
 import express from "express"
-import { initDb } from './datebase/db'
+import { initDb } from './dateBase/db'
 import { routeHandlers } from "./routes";
 import { HttpTypes } from "./enums/httpTypes";
 import { RouteHandler } from "./interfaces/routeHandler";
