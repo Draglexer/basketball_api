@@ -1,11 +1,8 @@
 import {DataTypes} from "sequelize";
 import {Team, User, Game, Tournament, TeamInTournament, Location} from "../models";
 import {db} from "./db";
-import { LocationAttrs } from "../models/location";
-
 
 // описываю модели (таблицы) для postgresSQL
-
 export async function defineModels() {
 
     await User.init({
