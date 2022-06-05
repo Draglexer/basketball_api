@@ -3,6 +3,7 @@ import { RouteHandler } from "../../interfaces/routeHandler";
 import { HttpTypes } from "../../enums/httpTypes";
 import { userService } from "../../services/user/userService";
 
+
 export const userGetAll: RouteHandler = {
     url: "/team",
     requestType: HttpTypes.get,

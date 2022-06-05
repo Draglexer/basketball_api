@@ -1,10 +1,11 @@
+// подключение к бд, определение модделей и создание таблиц
 import {DataTypes, Model, Sequelize} from 'sequelize'
 import { defineModels } from "./defineModels";
 import {relatingModels} from "./relationshipsModels";
 import {Game, Team, TeamInTournament, Tournament, User} from "../models";
 
-export const db = new Sequelize('postgres://postgres:deniskaSUPER12345@localhost:5432/diploma');
-// export const db = new Sequelize('postgres://postgres:root@localhost:5432/diploma')
+// export const db = new Sequelize('postgres://postgres:deniskaSUPER12345@localhost:5432/diploma');
+ export const db = new Sequelize('postgres://postgres:root@localhost:5432/diploma')
 // export const db = new Sequelize(
 //     process.env.DB_NAME,
 //     process.env.DB_USER,

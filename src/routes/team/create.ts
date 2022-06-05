@@ -11,7 +11,6 @@ export const teamCreate: RouteHandler = {
         try {
             const body = req.body;
 
-
             // @ts-ignore
             userService.signup({})
             res.json("запрос работает!")

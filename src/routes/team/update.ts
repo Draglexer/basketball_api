@@ -1,7 +1,8 @@
 // Роуты (то, что можно запросить по ссылке
 import { RouteHandler } from "../../interfaces/routeHandler";
 import { HttpTypes } from "../../enums/httpTypes";
-import {userService} from "../../services/user/userService";
+import { userService } from "../../services/user/userService";
+
 
 export const userSignup: RouteHandler = {
     url: "/team",

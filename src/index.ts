@@ -1,5 +1,5 @@
 import express from "express"
-import { initDb } from './dataBase/db'
+import { initDb } from './datebase/db'
 import { routeHandlers } from "./routes";
 import { HttpTypes } from "./enums/httpTypes";
 import { RouteHandler } from "./interfaces/routeHandler";
@@ -22,7 +22,7 @@ const routeHandlerMapper: Partial<Record<HttpTypes, (v: RouteHandler) => void>> 
 routeHandlers.forEach(x => routeHandlerMapper[x.requestType](x))
 // define a route handler for the default home page
 app.get("/", async (req, res) => {
-    res.send("Hello world!");
+    res.send("Application works!!!");
 });
 
 // start the Express server
