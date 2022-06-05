@@ -1,10 +1,10 @@
-//Роуты (то, что можно запросить по ссылке
+// Роуты (то, что можно запросить по ссылке
 import { RouteHandler } from "../../interfaces/routeHandler";
 import { HttpTypes } from "../../enums/httpTypes";
 import { User } from "../../models/user";
 
 export const userGet: RouteHandler = {
-    uri: "/user",
+    url: "/user",
     requestType: HttpTypes.get,
     handler: async (req, res) => {
         const users = await User.findAll()

@@ -1,11 +1,11 @@
 // роут хендлер
-import { RouteHandler } from "../../interfaces/routeHandler";
-import { HttpTypes } from "../../enums/httpTypes";
+import { RouteHandler } from "../../../../basketball_api-main/src/interfaces/routeHandler";
+import { HttpTypes } from "../../../../basketball_api-main/src/enums/httpTypes";
 
-import {userService} from "../../services/user/userService";
+import {userService} from "../../../../basketball_api-main/src/services/user/userService";
 
 export const userByIdGet: RouteHandler = {
-    url: "/user/:id",
+    url: "/team/:id",
     requestType: HttpTypes.get,
     handler: async (req, res) => {
         try {

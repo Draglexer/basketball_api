@@ -1,9 +1,6 @@
 {
-  "verbose": true,
-  "watch": "src/**",
-  "ignore": ["*.test.js", "fixtures/*"],
-  "execMap": {
-    "rb": "ruby",
-    "pde": "processing --sketch={{pwd}} --run"
-  }
+  "ignore": [".git", "node_modules", "dist"],
+  "watch": ["./src"],
+  "exec": "npm start",
+  "ext": "ts"
 }
