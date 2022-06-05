@@ -9,7 +9,7 @@ export interface GameAttrs {
     winningTeamId : number;
     dateEvent : string;
     tournamentId : number;
-    venueId : number;
+    locationId : number;
 }
 
 export interface GameCreationAttrs extends Optional<GameAttrs, 'id'> {}
@@ -23,7 +23,7 @@ export class Game extends Model<GameAttrs, GameCreationAttrs> implements GameAtt
     declare public winningTeamId : number;
     declare public dateEvent : string;
     declare public tournamentId : number;
-    declare public venueId : number;
+    declare public locationId : number;
     declare public readonly createdAt : Date; // дата создания, при создании не указывать
     declare public readonly updatedAt : Date; // дата измненения, при создании не указывать
 }

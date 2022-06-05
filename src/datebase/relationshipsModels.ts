@@ -1,4 +1,4 @@
-import {Team, User,Game, TeamInTournament,Tournament,Venue} from "../models";
+import {Team, User,Game, TeamInTournament,Tournament,Location} from "../models";
 import { db } from "./db"
 import {DataTypes, Model} from "sequelize";
 
@@ -26,6 +26,6 @@ export async function relatingModels () {
     await Game.belongsTo(TeamInTournament, { foreignKey : 'team2Id'});
     await Game.belongsTo(TeamInTournament, { foreignKey : 'winningTeamId'});
 
-    await Venue.hasMany(Game,{ foreignKey : 'id'});
-    await Game.belongsTo(Venue, { foreignKey : 'venueId'});
+    await Location.hasMany(Game,{ foreignKey : 'id'});
+    await Game.belongsTo(Location, { foreignKey : 'locationId'});
 }
